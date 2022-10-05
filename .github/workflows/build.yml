@@ -22,4 +22,11 @@ jobs:
         with:
           name: PDF
           path: main.pdf
+      - name: Commit and push PDF file
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: main.pdf --force
+          author_name: GitHub Actions
+          message: 'Add PDF file'
+          
           
