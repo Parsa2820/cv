@@ -1,0 +1,62 @@
+\documentclass{moderncv}       
+\moderncvstyle{banking}
+\moderncvcolor{blue}                               
+\usepackage{apacite}
+\usepackage{nth}
+\usepackage[scale=0.75]{geometry}
+\usepackage{fontspec}
+\setmainfont{SourceSerif4}[
+    Path = ./fonts/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    ItalicFont = *-Italic,
+    BoldFont = *-Bold,
+    BoldItalicFont = *-BoldItalic,
+    % This explicitly fixes your "sb" (semibold) warning:
+    FontFace={sb}{n}{Font=*-SemiBold},
+    FontFace={sb}{it}{Font=*-SemiBoldItalic}
+]
+
+\usepackage[english]{babel}
+
+\name{Parsa}{Mohammadian}
+% \title{Computer Engineering Student}
+% \born{Birth Date: 22 January 2001}
+% \address{street and number}{postcode city}{country}
+\phone[mobile]{+1~(416)~837~0124}
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{parsa.mohammadian@mail.utoronto.ca}
+% \homepage{www.parsa2820.ir}                         
+% \social[linkedin]{parsa2820}                        
+% \social[github]{parsa2820}                              
+% \social[gitlab]{parsa2820}                              
+% \social[stackoverflow]{12321674/parsa2820}            
+% \social[googlescholar]{yb0gSdcAAAAJ}            
+
+% \photo[80pt][0.4pt]{./assets/picture.jpg}                       
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+
+\begin{document}
+
+\input{sections/cover-letter-ta}
+
+\makecvtitle
+
+\input{sections/education}
+\input{sections/teching-experience}
+\input{sections/technical-skills}
+\input{sections/research-experience}
+\input{sections/work-experience}
+\input{sections/selected-courses}
+\input{sections/languages}
+\input{sections/volunteering}
+% \input{sections/research-interests}
+% \input{sections/publications}
+% \input{sections/notable-course-projects}
+\input{sections/honors-and-awards}
+
+\section{References}
+References are available upon request.
+
+\end{document}
